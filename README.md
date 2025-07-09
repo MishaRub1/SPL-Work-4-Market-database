@@ -1,4 +1,4 @@
-# 🛒 BGU Mart
+# 🛒 BGU Mart - SPL work 4
 
 A supermarket chain management system built with Python and SQLite.
 
