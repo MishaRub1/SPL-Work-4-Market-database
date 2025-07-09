@@ -9,12 +9,18 @@ class Employee(object):
         self.name = name
         self.salary = salary
         self.branche = branche
+    
+    def __str__(self):
+        return str(tuple(vars(self).values()))
  
 class Supplier(object):
     def __init__(self, id, name, contact_information):
         self.id = id
         self.name = name
         self.contact_information = contact_information
+
+    def __str__(self):
+        return str(tuple(vars(self).values()))
 
 class Product(object):
     def __init__(self, id, description, price, quantity):
@@ -23,11 +29,17 @@ class Product(object):
         self.price = price
         self.quantity = quantity
 
+    def __str__(self):
+        return str(tuple(vars(self).values()))
+
 class Branche(object):
     def __init__(self, id, location, number_of_employees):
         self.id = id
         self.location = location
         self.number_of_employees = number_of_employees
+
+    def __str__(self):
+        return str(tuple(vars(self).values()))
 
 class Activitie(object):
     def __init__(self, product_id, quantity, activator_id, date):
@@ -35,6 +47,9 @@ class Activitie(object):
         self.quantity = quantity
         self.activator_id = activator_id
         self.date = date
+    
+    def __str__(self):
+        return str(tuple(vars(self).values()))
 
  
 #Repository
