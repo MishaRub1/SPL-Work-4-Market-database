@@ -15,7 +15,6 @@ It supports database initialization, activity processing, and reporting.
 
 ## Usage
 
-```bash
 python3 initiate.py config.txt
 python3 action.py actions.txt
 python3 printdb.py
